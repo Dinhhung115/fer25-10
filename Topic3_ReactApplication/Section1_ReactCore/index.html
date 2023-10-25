@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Sử dụng React tạo 1 element
+        const newElement = React.createElement(
+            "p",
+            {className: "p1", id:"block"},
+            React.createElement(
+                'h2',
+                {title: 'Học ReactJS'},
+                'Học ReactJS'
+            ),
+            React.createElement(
+                'p',
+                null,
+                'Học ReactJS từ cơ bản tới nâng cao'
+            )
+        )
+
+        // Sử dụng JSX để tạo ra element
+        const newElement1 = (
+            <p id='block' className='p1'>
+                <h2>Học ReactJS</h2>
+                <p>Học ReactJS từ cơ bản tới nâng cao</p>
+            </p>
+        )
+
+        // Tạo 1 container chứa 'newElement'
+        const app = ReactDOM.createRoot(document.getElementById("root"))
+        // Render 'newElement' vào container
+        app.render(newElement1)
+    </script>
+</body>
+
+</html>
+
+Babel
+JSX

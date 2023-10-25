@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "name": "12312",
+      "price": "123123",
+      "catId": 1,
+      "id": 6
+    },
+    {
+      "name": "12312",
+      "price": "123123",
+      "catId": 1,
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "SmartPhone"
+    },
+    {
+      "id": 2,
+      "name": "PC"
+    }
+  ]
+}
